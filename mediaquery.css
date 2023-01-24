@@ -1,4 +1,4 @@
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 500px) {
 .banner-inicial {
 	padding: 4em 1em;
 	margin: 1em 4vw;
@@ -20,13 +20,13 @@
 }
 
 .pessoas button {
-	padding: 1em 7.7vw;
+	padding: 1em 5.6vw;
 	border-radius: 5px;
 }
 
 
 #equipeDeVendas {
-	padding: 3em 0.5em 2em 0.5em;
+	padding: 3em 2em 3em 2em;
 	text-align: center;
 	display: block;	
 }
@@ -41,7 +41,7 @@
 }	
 
 #checkoutsParaMaratona {
-	padding: 4em 1em 2em 1em;
+	padding: 4em 1em 4em 1em;
 }
 
 .segunda-linha {
@@ -69,5 +69,15 @@
 	flex-direction: column;
 	padding: 3em 0;
 }
+	
+.opcoes-venda {
+	display: block;
+	
+}
+
+.primeira-linha {
+	padding-right: 0em; 
+}
+	
 
 }
