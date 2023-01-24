@@ -1,0 +1,73 @@
+@media screen and (max-width: 475px) {
+.banner-inicial {
+	padding: 4em 1em;
+	margin: 1em 4vw;
+}
+	
+.caixa-input {
+	width: 90%;
+	margin-top: 2em;	
+}
+	
+.explicacao {
+	font-size: 1.2em;
+	font-weight: 200;
+	padding-top: 0.5em;
+}	
+
+.titulo {
+	font-size: 2.2em;
+}
+
+.pessoas button {
+	padding: 1em 7.7vw;
+	border-radius: 5px;
+}
+
+
+#equipeDeVendas {
+	padding: 3em 0.5em 2em 0.5em;
+	text-align: center;
+	display: block;	
+}
+
+.thiago {
+	margin: 0 1vw;
+}
+
+.tipo-de-venda button {
+	padding: 2em 10vw;
+			
+}	
+
+#checkoutsParaMaratona {
+	padding: 4em 1em 2em 1em;
+}
+
+.segunda-linha {
+	padding: 0.5em 0em; ;
+	
+}
+
+.primeira-linha:nth-child(2) {
+	margin-top: 1em;
+}
+	
+.botao-limpar {
+	width: 70vw;
+	border-radius: 10px;
+	padding: 1em 0;
+	margin-top: 1em;
+}
+	
+.resultado {
+	margin-top: 1em;
+	background-color: var(--cinza);
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 3em 0;
+}
+
+}

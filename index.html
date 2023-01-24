@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Button Concatenation</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="mediaquery.css">
+		
+   
+		<script>
+			
+	var concatenatedText = "";
+	 	
+			
+  	function concatenateText(button) {
+	var inputText = document.getElementById("inputField").value;
+	
+  	concatenatedText += button.value;
+  	document.getElementById("result").innerHTML = inputText + "&sck=" + concatenatedText;
+	
+	}
+			
+	function reset(){
+	concatenatedText = "";	
+	document.getElementById("result").innerHTML = " ";	
+	
+	}	
+	
+	
+	
+	</script>
+		
+	</head>
+ 
+
+	<body>
+	<main class="utm-maker">
+	
+	<section class="banner-inicial">
+	<h1 class="titulo">Gerador de links com UTM</h1>
+	
+	<h2 class="explicacao"> Cole o link de checkout e em seguida aperte os botões correspondentes ás informações da venda</h2>	
+		
+	<input type="text" placeholder="Insira o link aqui" id="inputField" class="caixa-input">  
+		
+	</section>
+		
+		
+			<section id="equipeDeVendas">
+
+			<div class="equipe-checkout">
+			<p>Equipe de vendas</p>	
+			<p id="clique">Checkouts para maratona</p>	
+			</div>
+
+			<div class="pessoas">
+
+			<button onclick="concatenateText(this)" value="n">Natalia</button>
+			<button onclick="concatenateText(this)" value="t" class="thiago">Thiago</button>
+			<button onclick="concatenateText(this)" value="m">Mariza</button>
+		   </div>
+
+			<div class="tipo-de-venda">
+			<button onclick="concatenateText(this)" value="va">Venda Ativa</button>
+			<button onclick="concatenateText(this)" value="vp">Venda Passiva</button>
+			</div>
+				
+				<div class="indicator-container">
+					<div class="indicator-preto"></div>
+					<div class="indicator2"></div>
+
+				</div>
+
+			</section>
+
+			<section id="checkoutsParaMaratona">
+
+			<div class="equipe-checkout2">
+			<p id="clique2">Equipe de vendas</p>	
+			<p>Checkouts para maratona</p>	
+			</div>
+			
+			
+			<div class="opcoes-venda">
+			<div class="primeira-linha">
+			<button onclick="concatenateText(this)" value="cb-p">Página de vendas</button>
+			<button onclick="concatenateText(this)" value="cb-qc">QR Code</button>
+			</div>
+				
+			<div class="segunda-linha">
+			<button onclick="concatenateText(this)" value="cb-rz">Raiz do Site</button>
+			<button onclick="concatenateText(this)" value="cb-c">Chat ao Vivo</button>
+			</div>	
+				
+			</div>
+				
+			<div class="indicator-container2">
+					<div class="indicator1"></div>
+					<div class="indicator-preto"></div>
+
+			</div>
+				
+			</section>
+		
+	<section class="resultado">
+	
+    <p id="result"></p>
+	<button onclick=reset() class="botao-limpar">LIMPAR RESULTADO	</button>
+	</section>	
+		
+		</main>	
+		<script>
+		
+		const clique = document.getElementById("clique");
+		const clique2 = document.getElementById("clique2");
+		const checkoutsParaMaratona = document.getElementById("checkoutsParaMaratona");
+		const equipeDeVendas = document.getElementById("equipeDeVendas");
+
+		
+
+		clique.addEventListener("click", function() {
+		  checkoutsParaMaratona.style.display = "block";
+		  equipeDeVendas.style.display = "none";
+		});
+			
+		clique2.addEventListener("click", function() {
+		  checkoutsParaMaratona.style.display = "none";
+		  equipeDeVendas.style.display = "block";
+		});
+		
+			
+			
+		</script>
+	</body>
+</html>
+

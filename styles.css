@@ -1,0 +1,216 @@
+:root{
+    --cinza: #2a2f56;
+	--fonte: "Montserrat";
+	--cinzaclaro: #ccd6e3;
+	--cinzamedio: #838491;
+	--cinzabranco: #ebeff3;
+}
+
+
+* {
+	font-family: var(--fonte);
+	font-size: 16px;
+}
+
+.banner-inicial {
+	background: var(--cinza);
+	color: white;
+	text-align: center;
+	padding: 5em 0;
+	margin: 3em 10vw;
+	border-radius: 1.5em;
+	
+}
+
+.titulo {
+	font-size: 2.5em;
+	font-weight: 700;	
+}
+
+.explicacao {
+	font-size: 1.3em;
+	font-weight: 200;
+	padding-top: 0.5em;
+}
+
+.caixa-input {
+	width: 60%;
+	padding: 1em;
+	text-align: center;
+	margin-top: 2em;
+	border-radius: 1em;
+	border: 1px solid #343541;
+}
+
+#equipeDeVendas {
+	background-color: var(--cinzaclaro);
+	padding: 4em 0 2em 0;
+	text-align: center;
+	display: block;
+	
+}
+
+.equipe-checkout, .equipe-checkout2{
+	display: flex;
+	justify-content: center;
+}
+.equipe-checkout :nth-child(1){
+	font-size: 1.2em;
+	padding-bottom: 2em;
+	color: var(--cinza);
+	font-weight: 700;
+	padding-right: 1em;
+}
+
+.equipe-checkout :nth-child(2){
+	font-size: 1.2em;
+	padding-bottom: 2em;
+	color: var(--cinzabranco);
+	font-weight: 700;
+}
+
+.equipe-checkout :nth-child(2):hover {
+	color: var(--cinza);
+	cursor: pointer;
+}
+
+.pessoas {
+	padding-bottom: 1em;
+}
+
+.pessoas, .tipo-de-venda {
+	display: flex;
+	justify-content: center;
+	
+}
+
+.pessoas button {
+	background-color: var(--cinzabranco);
+	padding: 1em 9vw;
+	border: 1px solid var(--cinzamedio);
+	border-radius: 10px;
+	font-size: 1.1em;
+	cursor: pointer;
+	
+}
+
+.pessoas button:hover, .tipo-de-venda button:hover {
+	background-color: var(--cinza);
+	color: white;
+}
+.thiago {
+	margin: 0 1em;
+}
+
+
+.tipo-de-venda button {
+	display: inline-block;
+	background-color: var(--cinzabranco);
+	padding: 2em 13.3vw;
+	border: 1px solid var(--cinzamedio);
+	font-size: 1.1em;
+	cursor: pointer;
+		
+}
+
+
+.indicator-container, .indicator-container2 {
+  display: flex; 
+	justify-content: center;
+	margin-top: 3em;
+}
+
+.indicator1, .indicator2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray; 
+  margin-right: 10px; 
+}
+
+.indicator-preto{
+	background-color: var(--cinza);
+	width: 10px;
+  height: 10px;
+  border-radius: 50%;
+	margin-right: 10px; 
+}
+
+#checkoutsParaMaratona {
+	margin-top: 1em;
+	background-color: var(--cinzaclaro);
+	padding: 4em 0 2em 0;
+	text-align: center;
+	display: none;
+	
+}
+
+.opcoes-venda button {
+	background-color: var(--cinzabranco);
+	padding: 1em 5vw;
+	border: 1px solid var(--cinzamedio);
+	border-radius: 10px;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+
+.opcoes-venda button:hover {
+	background-color: var(--cinza);
+	color: white;
+}
+
+.equipe-checkout2 :nth-child(1) {
+	font-size: 1.2em;
+	padding-bottom: 2em;
+	color: var(--cinzabranco);
+	font-weight: 700;
+}
+
+.equipe-checkout2 :nth-child(1):hover {
+	color: var(--cinza);
+	cursor: pointer;
+}
+
+.equipe-checkout2 :nth-child(2) {
+	font-size: 1.2em;
+	padding-bottom: 2em;
+	color: var(--cinza);
+	font-weight: 700;
+	padding-left: 1em;
+}
+
+.resultado {
+	margin-top: 2em;
+	background-color: var(--cinza);
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 5em 0;
+}
+
+#result {
+	background-color: var(--cinzabranco);
+	width: 50%;
+	height: 3vh;
+	border-radius: 20px;
+	padding: 1em 5em;
+	font-size: 1em;
+	
+}
+
+.botao-limpar {
+	width: 20vw;
+	border-radius: 10px;
+	padding: 1em 0;
+	margin-top: 2em;
+	border: 1px solid #c13333;
+	background-color: #f53939;
+	color: white;
+	cursor: pointer;
+	
+}
+
+.botao-limpar:hover {
+	background-color: #c13333;
+}
