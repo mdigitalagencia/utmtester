@@ -146,8 +146,15 @@ width: 10px;
 }
 
 .opcoes-venda {
-display:flex;
-justify-content: center;}
+	display: flex;
+	justify-content: center;
+	
+}
+
+.primeira-linha {
+	padding-right: 0.3em; 
+}
+
 
 .opcoes-venda button {
 	background-color: var(--cinzabranco);
@@ -204,7 +211,7 @@ justify-content: center;}
 }
 
 .botao-limpar {
-	width: 20vw;
+	width: 25vw;
 	border-radius: 10px;
 	padding: 1em 0;
 	margin-top: 2em;
